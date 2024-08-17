@@ -7,13 +7,16 @@ public class Restaurant_management_system {
         System.out.println(r.getNameLocation());
 
         Menu menu = new Menu();
-        menu.addDish("Pasta", 12.5);
-        menu.addDish("Pizza", 15.0);
+        menu.addDish("Noodles", 40.00);
+        menu.addDish("Manchuria", 55.00);
+        menu.addDish("Pizza", 50.0);
+        menu.addDish("Chicken",100.0);
         menu.addDrink("Coke", 2.5);
         menu.addDrink("Water", 1.0);
 
         Order o = new Order();
-        o.addItem(menu.getDish("Pasta"));
+        o.addItem(menu.getDish("Chicken"));
+        o.addItem(menu.getDish("Pizza"));
         o.addItem(menu.getDrink("Coke"));
         o.printOrderDetails();
 
